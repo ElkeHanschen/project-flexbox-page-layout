@@ -1,0 +1,11 @@
+# Mac files
+.DS_Store
+*/.DS_Store
+
+# vscode
+.history/
+.vscode/
+
+# Logs
+logs
+*.log
