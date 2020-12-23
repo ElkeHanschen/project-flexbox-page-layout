@@ -4,10 +4,11 @@ html {
 *,
 *:before,
 *:after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
+
 body {
   background-image: url(../img/clouds.png);
   font-family: 'Cabin', Arial, Geneva, sans-serif;
@@ -15,7 +16,7 @@ body {
 
 .outer-wrapper {
   margin: 0 auto;
-  padding: 0 1.5em;
+  padding: 1.5em 1.5em 3em 1.5em;
 }
 
 .header-wrapper {
@@ -25,32 +26,38 @@ body {
 /* nav */
 .nav-wrapper {
   background: url(../img/scallop.png) repeat-x;
-  display: flex;
   border-bottom: 3px solid #cc8850;
+  display: flex;
 }
+
 .nav-item {
+  margin: 0.6em 0;
   width: 50%;
-  margin: 10px 0;
 }
+
 .nav-item a {
   color: #c80060;
   text-decoration: none;
 }
+
 .nav-item a:hover {
   color: #00c4c7;
 }
+
 .nav-item a:active {
   color: #006d6e;
 }
+
 .nav-items {
   background-color: #e6bf98;
   display: flex;
   flex-flow: row wrap;
   list-style: none;
-  padding: 0.75em;
   margin: 12px 0 0 0;
+  padding: 0.75em;
   width: 100%;
 }
+
 /* main */
 .main-wrapper {
   background-color: #fff6e0;
@@ -58,120 +65,231 @@ body {
   border-bottom-right-radius: 10px;
   padding: 2em;
 }
-.main-hl-article,
-.section-hl-testimonial,
-.section-hl-pie {
+
+.main-article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-hl-article {
+  border-bottom: 2px dotted #c80060;
+  color: #c80060;
   font-family: 'Niconne', cursive;
+  font-size: 3em;
   font-weight: normal;
   margin: 0;
-}
-.main-hl-article {
-  font-size: 3em;
-  color: #c80060;
-  border-bottom: 2px dotted #c80060;
-}
-/* tutorial wasn't about the dynamic exchange of imgs, therefore img might look ugly */
-.article-img {
-  border-radius: 10px;
   width: 100%;
-  display: block;
-  margin: 30px 0 0 0;
 }
+
 .main-text {
   margin-top: 1em;
 }
 
+.article-img {
+  border-radius: 10px;
+  display: block;
+  margin: 2em 0 0 0;
+  width: 70%;
+}
+
 /* section */
-.section-hl-testimonial,
-.section-hl-pie {
-  color: #fff;
-  font-size: 2em;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 0.25em 0 0.25em 0.5em;
-  margin-top: 0;
-}
-.section-hl-testimonial {
-  background-color: #00c4c7;
-}
-.section-hl-pie {
-  background-color: #c80060;
-  margin: 0;
-}
 .section-wrapper {
   margin-top: 2em;
 }
-.section-secondary {
-  margin-top: 2em;
+
+.section-hl-testimonial,
+.section-hl-pie {
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: 'Niconne', cursive;
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0.25em 0.5em 0.25em 0.5em;
 }
-/* tutorial wasn't about the dynamic exchange of imgs, therefore "cover" to not have it look utterly ugly */
-.section-img {
-  width: 100%;
-  background-size: cover;
-  border-radius: 0px 0px 10px 10px;
-  display: block;
+
+.section-hl-testimonial {
+  background-color: #00c4c7;
 }
+
+.section-hl-pie {
+  background-color: #c80060;
+}
+
 .section-primary {
   border: 1px solid #00c4c7;
   border-radius: 10px;
 }
+
 .section-secondary {
   border: 1px solid #c80060;
   border-radius: 10px;
+  margin-top: 2em;
 }
+
 .section-bq {
-  padding: 0.75em;
+  padding: 1em;
 }
+
 blockquote cite {
-  text-transform: uppercase;
-  font-style: normal;
   display: block;
+  font-style: normal;
   margin-top: 1em;
+  text-transform: uppercase;
+}
+
+.section-img {
+  background-size: cover; /* make do instead of dynamic image exchange */
+  border-radius: 0px 0px 10px 10px;
+  display: block;
+  width: 100%;
 }
 
 /* footer */
 .footer-wrapper {
   background-color: #00c4c7;
-  color: #fff;
-  margin: 1em 0 3em 0;
   border-radius: 10px;
+  color: #fff;
+  margin: 1em 0 0 0;
   padding: 1em;
 }
-.footer-text a {
-  margin-top: 1em;
-  color: #fff;
-  text-decoration: none;
-}
+
 .footer-text,
 .footer-links {
   text-align: center;
 }
-.footer-links {
+
+.footer-text a {
+  color: #fff;
   margin-top: 1em;
+  text-decoration: none;
 }
+
 .footer-link svg {
   color: #fff;
   height: 50px;
-  margin: 10px;
+  margin: 1em 0.5em;
 }
 
-@media (min-width: 769px) {
+/* media queries */
+@media (min-width: 640px) {
   .header-wrapper {
     text-align: left;
   }
+
+  .nav-items {
+    display: flex;
+    padding: 0.75em 0.75em 0.75em 1.75em;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 0 1em 0 0;
+    width: auto;
+  }
+
+  .main-article {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 2em;
+  }
+
+  .main-hl-article {
+    order: 0;
+    width: 100%;
+  }
+
+  .article-img {
+    order: 2;
+    width: 38%;
+  }
+
+  .main-text.first {
+    order: 1;
+    margin-right: 2em;
+    margin-top: 2em;
+    width: 55%;
+  }
+
+  .main-text.second {
+    order: 3;
+    width: 100%;
+  }
+
+  .main-text.third {
+    order: 4;
+    width: 100%;
+  }
+
+  .section-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 3em;
+  }
+
   .section-hl-testimonial,
   .section-hl-pie {
-    font-size: 3em;
+    font-size: 1.5em;
   }
-  .outer-wrapper {
-    padding-left: calc((100vw - 640px) / 2);
-    padding-right: calc((100vw - 640px) / 2);
+
+  .section-primary,
+  .section-secondary {
+    width: 40%;
+  }
+
+  .section-secondary {
+    margin-left: 1em;
+    margin-top: 0;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 880px) {
   .outer-wrapper {
     padding-left: calc((100vw - 840px) / 2);
     padding-right: calc((100vw - 840px) / 2);
+  }
+
+  .main-wrapper {
+    display: flex;
+  }
+
+  .main-article {
+    margin-right: 2em;
+    padding: 0;
+    width: 65%;
+  }
+
+  .article-img {
+    width: 41%;
+  }
+
+  .main-text.first {
+    margin-right: 1em;
+  }
+
+  .section-wrapper {
+    display: flex;
+    flex: row wrap;
+    flex-direction: column;
+    margin-top: 0;
+    width: 35%;
+  }
+
+  .section-primary,
+  .section-secondary {
+    width: 100%;
+  }
+
+  .section-secondary {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .section-bq {
+    padding: 1em;
   }
 }

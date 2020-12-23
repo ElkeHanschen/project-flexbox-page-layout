@@ -1,4 +1,4 @@
-# Project Flexbox page layout - WIP
+# Project Flexbox page layout
 
 ### This Repo is based on:
 
@@ -8,25 +8,25 @@
 
 ### What is this about?
 
-- within the course, tutorial's exercise "Pie Flexbox" requested some rather minor changes from floats to Flexbox to an [already existing responsive code base](https://github.com/jen4web/fem-layout/tree/master/day-1-flexbox/4-pie-flexbox), see screenshots down below
-- as I found quite some things in there irritating, not really clean, I've decided as a practice to give it a shot and build it "anew":
+- exercise "Pie Flexbox" requested some rather minor changes from floats to flexbox to an [already existing responsive code](https://github.com/jen4web/fem-layout/tree/master/day-1-flexbox/4-pie-flexbox), see screenshots down below
+- as I found some things in there irritating, not really clean, I've decided as a practice to give it a shot and style it "anew":
 
-  - without using floats and flexbox (as tutor does in result)
-  - with styling via classes, not selecting elements
-  - in adapting of (superfluous) elements
-  - in using svgs instead of images in footer, via [fontawesome](https://fontawesome.com/icons?d=gallery&m=free) and [svg check/clean-up via svgomg](https://jakearchibald.github.io/svgomg/)
-  - etc...
+  - without using floats together with flexbox (as tutor did in their result)
+  - with styling via classes (renamed them as I found their naming not helpful!), not selecting elements
+  - in adapting of (superfluous) elements but generally keeping the HTML set-up (copy & paste)
+  - in using svgs instead of images within footer, via [fontawesome](https://fontawesome.com/icons?d=gallery&m=free) and [svg check/clean-up via svgomg](https://jakearchibald.github.io/svgomg/)
+  - adapt breakpoints to content
+  - make prettier (subjective)
 
-### First Task
+#### Breakpoints
 
-- set up mobile view (~320px - 768px) view (breakpoints are not fixed-fixed yet, will be dealt with along the way/what makes sense)
+- debatable (now set up for ~ 320px, 640px, 880px)
 
-#### Heads-Up
+#### Used images
 
-- content (HTML) has been copy & pasted, css has been styled anew
 - for the default exercise it's not about dynamic exchange of images, maybe a ToDo for later
 
-### Screenshots of tutorial result
+#### Screenshots of tutorial result
 
 - to (vagely) stick to styling
 
