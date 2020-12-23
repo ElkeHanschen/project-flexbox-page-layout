@@ -30,10 +30,20 @@
 
 - to (vagely) stick to styling
 
+##### 375px
+
 ![375](screenshots/01-mobile-375.png)
 ![375](screenshots/02-mobile-375.png)
+
+##### 768px
+
 ![768](screenshots/03-768.png)
 ![768](screenshots/04-768.png)
+
+##### 850px
+
+![850](screenshots/05-850.png)
+![850](screenshots/06-850.png)
 
 ### How to run this?
 
