@@ -27,9 +27,10 @@
 - disclaimer: I took my already modified code from Part One to continue with from there
 - Tasks:
   - integrate pie image gallery
-  - add new homepage
-  - integrate responsive background image on homepage
-  - integrate responsive image on History page
+  - add new homepage content and styling
+  - integrate responsive background banner image on homepage
+  - integrate responsive image on History page (Merilee)
+  - polyfill
 
 #### My breakpoints (also different from course ones)
 

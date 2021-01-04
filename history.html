@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin|Niconne">
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="picturefill.min.js"></script>
     <title>History</title>
 </head>
 
@@ -29,7 +34,12 @@
         <div class="main-wrapper">
             <article class="main-article">
                 <h2 class="main-hl-article">History</h2>
-                <img class="article-img" src="img/merilee.jpg" alt="Merilee Wilbur, with her favorite rolling pin.">
+                <picture class="article-picture">
+                    <source srcset="img/history/merilee-400.jpg" media="(min-width: 880px)">
+                    <source srcset="img/history/merilee-250.jpg" media="(min-width: 640px)">
+                    <img srcset="img/history/merilee-175.jpg" class="article-img"
+                        alt="Merilee Wilbur, with her favorite rolling pin.">
+                </picture>
                 <p class="main-text first">Sometimes great things come from humble
                     beginnings. For Merilee Wilbur, that beginning came in the form of a request from her 8-year-old
                     son, Jake, who needed a snack to take to his chess club meeting. Merilee flipped through her recipe
@@ -57,7 +67,7 @@
                 </aside>
                 <aside class="section-secondary">
                     <h3 class="section-hl-pie">Pie of the Month</h3>
-                    <img class="section-img" src="img/pi-day.jpg" alt="Pi Day Pie with Strawberry filling">
+                    <img class="section-img" src="img/history/pi-day.jpg" alt="Pi Day Pie with Strawberry filling">
                 </aside>
             </section>
         </div>
