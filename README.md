@@ -5,8 +5,11 @@
 - tutorial within [Frontendmasters' Beginners Path](https://frontendmasters.com/learn/beginner/)
 - tutorial [GitHub](https://github.com/jen4web/fem-layout)
 - tutorial video [Floats / Flexbox / CSS-Grid - setup full webpage with flexbox](https://frontendmasters.com/courses/css-grids-flexbox/flexbox-exercise-2-setup-full-webpage-layout/)
+- tutorial video [Responsive Image Exercise](https://frontendmasters.com/courses/css-grids-flexbox/responsive-images-exercise/)
 
 ### What is this about?
+
+### First part - code changes from floats to flexbox
 
 - exercise "Pie Flexbox" requested some rather minor changes from floats to flexbox to an [already existing responsive code](https://github.com/jen4web/fem-layout/tree/master/day-1-flexbox/4-pie-flexbox), see screenshots down below
 - as I found some things in there irritating, not really clean, I've decided as a practice to give it a shot and style it "anew":
@@ -18,32 +21,49 @@
   - adapt breakpoints to content
   - make prettier (subjective)
 
-#### Breakpoints
+### Second part - include a pie image gallery, add new homepage
 
-- debatable (now set up for ~ 320px, 640px, 880px)
+- take already existing code [Pie Flexbox](https://github.com/jen4web/fem-layout/tree/master/day-1-flexbox/4-pie-flexbox) and [Responsive Images](https://github.com/jen4web/fem-layout/tree/master/day-1-flexbox/6-responsive-images) and follow tasks below
+- disclaimer: I took my already modified code from Part One to continue with from there
+- Tasks:
+  - integrate pie image gallery
+  - add new homepage
+  - integrate responsive background image on homepage
+  - integrate responsive image on History page
 
-#### Used images
+#### My breakpoints (also different from course ones)
 
-- for the default exercise it's not about dynamic exchange of images, maybe a ToDo for later
+- 320px
+- 640px
+- 880px
 
-#### Screenshots of tutorial result
+### Screenshots of tutorial results - to (vagely) stick to styling
 
-- to (vagely) stick to styling
+[First Exercise - from floats to flexbox](#first-exercise)
 
-##### 375px
+[Second Exercise - pie gallery, new homepage, responsive imgaes](#second-exercise)
+
+#### First Exercise
 
 ![375](screenshots/01-mobile-375.png)
 ![375](screenshots/02-mobile-375.png)
 
-##### 768px
-
 ![768](screenshots/03-768.png)
 ![768](screenshots/04-768.png)
 
-##### 850px
-
 ![850](screenshots/05-850.png)
 ![850](screenshots/06-850.png)
+
+#### Second Exercise
+
+![375](screenshots/pie_01_375.png)
+![375](screenshots/pie_02_375.png)
+
+![768](screenshots/pie_03_768.png)
+![768](screenshots/pie_04_768.png)
+
+![850](screenshots/pie_05_850.png)
+![850](screenshots/pie_06_850.png)
 
 ### How to run this?
 
