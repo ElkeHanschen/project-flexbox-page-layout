@@ -74,7 +74,8 @@ body {
 }
 
 .main-hl-article,
-.main-hl-gallery {
+.main-hl-gallery,
+.main-hl-home {
   border-bottom: 2px dotted #c80060;
   color: #c80060;
   font-family: 'Niconne', cursive;
@@ -149,7 +150,47 @@ blockquote cite {
   width: 100%;
 }
 
-/* gallery wrapper */
+/* article */
+.article-hl {
+  border-bottom: 2px dotted #c80060;
+  color: #c80060;
+  font-family: 'Niconne', cursive;
+  font-size: 2em;
+  font-weight: normal;
+  margin-top: 18px;
+}
+
+.article-text.main {
+  margin-top: 2em;
+}
+
+.article-text.testimonial,
+.article-text.mothersday,
+.article-text.menu,
+.article-text.donations {
+  margin-top: 0.5em;
+}
+
+.article-btn {
+  background-color: #c80060;
+  border: 2px solid #c80060;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  margin: 1em 0;
+  padding: 0.3em 1em;
+  text-decoration: none;
+}
+
+.mothersday-img,
+.menu-img {
+  border-radius: 10px;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+/* gallery */
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
@@ -161,6 +202,7 @@ blockquote cite {
   margin-top: 2em;
 }
 
+/* TODO: refactor CSS reset to get rid of this: */
 figure {
   display: block;
   margin-block-start: 1em;
@@ -281,16 +323,22 @@ figure {
   .gallery-item {
     flex: 0 0 50%;
   }
+
+  .bkgrdimg {
+    background: url(../img/header-850.jpg) no-repeat;
+    height: 130px;
+  }
+
+  .mothersday-img,
+  .menu-img {
+    max-width: 250px;
+  }
 }
 
 @media (min-width: 880px) {
   .outer-wrapper {
     padding-left: calc((100vw - 840px) / 2);
     padding-right: calc((100vw - 840px) / 2);
-  }
-
-  .main-wrapper {
-    display: flex;
   }
 
   .main-article {
@@ -331,5 +379,21 @@ figure {
 
   .gallery-item {
     flex: 0 0 33%;
+  }
+
+  .bkgrdimg {
+    background: url(../img/header-1200.jpg) no-repeat;
+    height: 183px;
+  }
+
+  .article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+  }
+
+  .article-item {
+    margin-right: 4%;
+    width: 21%;
   }
 }
