@@ -14,12 +14,12 @@
 - exercise "Pie Flexbox" requested some rather minor changes from floats to flexbox to an [already existing responsive code](https://github.com/jen4web/fem-layout/tree/master/day-1-flexbox/4-pie-flexbox), see screenshots down below
 - as I found some things in there irritating, not really clean, I've decided as a practice to give it a shot and style it "anew":
 
-  - without using floats together with flexbox (as tutor did in their result)
-  - with styling via classes (renamed them as I found their naming not helpful!), not selecting elements
-  - in adapting of (superfluous) elements but generally keeping the HTML set-up (copy & paste)
-  - in using svgs instead of images within footer, via [fontawesome](https://fontawesome.com/icons?d=gallery&m=free) and [svg check/clean-up via svgomg](https://jakearchibald.github.io/svgomg/)
-  - adapt breakpoints to content
-  - make prettier (subjective)
+  - trying to use flexbox without using floats (tutor used both which was due to lack of explanation, confusing)
+  - with styling via classes, not selecting elements (also renamed the existing names as I found their naming not helpful!)
+  - in keeping the already given HTML and only adapting where necessary to position
+  - in using svgs instead of images, via [fontawesome](https://fontawesome.com/icons?d=gallery&m=free) and [svg check/clean-up via svgomg](https://jakearchibald.github.io/svgomg/)
+  - in adapting breakpoints to content
+  - in making some things prettier (subjective!)
 
 ### Second part - include a pie image gallery, add new homepage
 
@@ -32,7 +32,7 @@
   - integrate responsive image on History page (Merilee)
   - polyfill
 
-#### My breakpoints (also different from course ones)
+#### My breakpoints (different from course ones)
 
 - 320px
 - 640px
